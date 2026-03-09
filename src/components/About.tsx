@@ -14,7 +14,7 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden glass p-2">
               <img 
-                src="https://picsum.photos/seed/silvia-portrait/800/1000" 
+                src="https://ialets.com/wp-content/uploads/2025/12/42A3717.webp" 
                 alt="Sílvia Banda Enigma Portrait" 
                 className="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
