@@ -50,7 +50,7 @@ export default function About() {
                 "Não saberia fazer outra coisa além de cantar. A música não é apenas minha profissão, é minha essência."
               </blockquote>
               <p>
-                Com mais de duas décadas de estrada, Sílvia consolidou uma carreira brilhante, marcada pela capacidade de transitar entre gêneros e emocionar públicos diversos, desde eventos corporativos sofisticados até grandes celebrações populares.
+                Com mais de Três décadas de estrada, Sílvia consolidou uma carreira brilhante, marcada pela capacidade de transitar entre gêneros e emocionar públicos diversos, desde eventos corporativos sofisticados até grandes celebrações populares.
               </p>
             </article>
           </motion.div>

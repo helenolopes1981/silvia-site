@@ -51,7 +51,7 @@ export default function Contact() {
                     key={i} 
                     href={social.href} 
                     className="p-3 glass rounded-full hover:bg-brand-red hover:text-white transition-all duration-300"
-                    aria-label="Social link"
+                    aria-label="https://www.instagram.com/silviabandaenigma"
                   >
                     {social.icon}
                   </a>
