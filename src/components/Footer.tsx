@@ -41,6 +41,8 @@ export default function Footer() {
                 <a 
                   key={i} 
                   href={social.href} 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 glass rounded-lg hover:bg-brand-red hover:text-white transition-all"
                   aria-label="Social link"
                 >

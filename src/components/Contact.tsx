@@ -50,6 +50,8 @@ export default function Contact() {
                   <a 
                     key={i} 
                     href={social.href} 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 glass rounded-full hover:bg-brand-red hover:text-white transition-all duration-300"
                     aria-label="Social link"
                   >
