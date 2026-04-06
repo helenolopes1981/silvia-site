@@ -36,7 +36,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-white/40 uppercase font-bold tracking-widest">Telefone / WhatsApp</p>
-                    <p className="text-white font-medium">+55 (31) 99999-9999</p>
+                    <p className="text-white font-medium">+55 (31) 98228-4101</p>
                   </div>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function Contact() {
                       id="phone" 
                       required 
                       className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-red transition-colors"
-                      placeholder="(00) 00000-0000"
+                      placeholder="(31) 98228-4101"
                     />
                   </div>
                 </div>
