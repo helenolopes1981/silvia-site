@@ -43,7 +43,7 @@ export default function Contact() {
 
               <div className="mt-12 flex gap-4">
                 {[
-                  { icon: <Instagram size={20} />, href: '#' },
+                  { icon: <Instagram size={20} />, href: 'https://www.instagram.com/silviabandaenigma' },
                   { icon: <Facebook size={20} />, href: '#' },
                   { icon: <Youtube size={20} />, href: '#' }
                 ].map((social, i) => (
@@ -51,7 +51,7 @@ export default function Contact() {
                     key={i} 
                     href={social.href} 
                     className="p-3 glass rounded-full hover:bg-brand-red hover:text-white transition-all duration-300"
-                    aria-label="https://www.instagram.com/silviabandaenigma"
+                    aria-label="Social link"
                   >
                     {social.icon}
                   </a>

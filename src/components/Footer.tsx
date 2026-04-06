@@ -34,7 +34,7 @@ export default function Footer() {
             <h3 className="text-sm font-bold uppercase tracking-widest text-brand-red mb-6">Redes Sociais</h3>
             <div className="flex gap-4">
               {[
-                { icon: <Instagram size={20} />, href: '#' },
+                { icon: <Instagram size={20} />, href: 'https://www.instagram.com/silviabandaenigma' },
                 { icon: <Facebook size={20} />, href: '#' },
                 { icon: <Youtube size={20} />, href: '#' }
               ].map((social, i) => (
