@@ -23,7 +23,7 @@ export default function About() {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 glass-red p-6 rounded-2xl max-w-[200px]">
-              <p className="text-3xl font-bold text-brand-red">25+</p>
+              <p className="text-3xl font-bold text-brand-red">35+</p>
               <p className="text-sm font-medium text-white/80">Anos de trajetória musical profissional</p>
             </div>
           </motion.div>
@@ -41,7 +41,7 @@ export default function About() {
             
             <article className="space-y-6 text-white/70 text-lg leading-relaxed">
               <p>
-                Filha do renomado músico Joaquim do Mato Véio, Sílvia respira música desde o berço. Sua jornada começou aos 6 anos, e aos 18 já dominava o contra-baixo, realizando seu primeiro show profissional aos 19.
+                Filha do renomado músico Joaquim do Mato Véio, Sílvia respira música desde o berço. Sua jornada começou aos 6 anos, e aos 18 já dominava o contra-baixo, realizando seu primeiro show profissional aos 18.
               </p>
               <p>
                 Ao lado de seus irmãos Edmar e Edson, fundou a <span className="text-white font-semibold">Banda Enigma</span>, um projeto que se tornou referência em versatilidade e qualidade técnica em toda a região.

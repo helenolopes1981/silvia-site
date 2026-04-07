@@ -25,7 +25,7 @@ export default function Hero() {
             <span className="text-brand-red">A Trilha Sonora</span> do Seu Sucesso.
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
-            25 anos de paixão, ritmo e performances inesquecíveis que elevam qualquer evento. Transformamos marcas e momentos em experiências memoráveis.
+            Mais de 35 anos de trajetória dedicados à música, criando apresentações que emocionam e transformam cada evento em uma experiência única.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

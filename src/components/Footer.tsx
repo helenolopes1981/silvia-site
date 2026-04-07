@@ -13,7 +13,7 @@ export default function Footer() {
               SÍLVIA <span className="text-brand-red">BANDA ENIGMA</span>
             </h2>
             <p className="text-white/50 max-w-sm leading-relaxed">
-              Elevando a imagem de marcas e eventos através de performances musicais de alta qualidade e versatilidade incomparável.
+              Performance vocal profissional, pensada para emocionar e criar conexões reais com o público.
             </p>
           </div>
 

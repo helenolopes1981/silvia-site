@@ -1,7 +1,38 @@
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Mail, Phone, Instagram, Facebook, Youtube, Send } from 'lucide-react';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    eventType: 'corporativo',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const text = `*Orçamento*
+    
+*Nome:* ${formData.name}
+*Telefone:* ${formData.phone}
+*E-mail:* ${formData.email}
+*Tipo de Evento:* ${formData.eventType}
+*Mensagem:* ${formData.message}`;
+
+    const encodedText = encodeURIComponent(text);
+    const whatsappUrl = `https://wa.me/5531982284101?text=${encodedText}`;
+    
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({ ...prev, [id]: value }));
+  };
+
   return (
     <section id="contato" className="py-24 bg-brand-black/80">
       <div className="container mx-auto px-6">
@@ -17,7 +48,9 @@ export default function Contact() {
                 <span className="text-brand-red">Inesquecíveis Juntos!</span>
               </h2>
               <p className="text-white/60 text-lg mb-10">
-                Pronta para elevar o nível do seu próximo evento? Entre em contato para uma consultoria musical personalizada e orçamento sem compromisso.
+                A música transforma momentos em memórias inesquecíveis.<br />
+                Vamos criar juntos algo perfeito para o seu evento.<br />
+                Entre em contato e receba um orçamento personalizado.
               </p>
 
               <div className="space-y-6">
@@ -67,7 +100,7 @@ export default function Contact() {
               viewport={{ once: true }}
               className="glass p-8 rounded-3xl"
             >
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-white/60">Nome</label>
@@ -75,6 +108,8 @@ export default function Contact() {
                       type="text" 
                       id="name" 
                       required 
+                      value={formData.name}
+                      onChange={handleChange}
                       className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-red transition-colors"
                       placeholder="Seu nome"
                     />
@@ -85,6 +120,8 @@ export default function Contact() {
                       type="tel" 
                       id="phone" 
                       required 
+                      value={formData.phone}
+                      onChange={handleChange}
                       className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-red transition-colors"
                       placeholder="(31) 98228-4101"
                     />
@@ -96,6 +133,8 @@ export default function Contact() {
                     type="email" 
                     id="email" 
                     required 
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-red transition-colors"
                     placeholder="seu@email.com"
                   />
@@ -104,12 +143,14 @@ export default function Contact() {
                   <label htmlFor="eventType" className="text-sm font-medium text-white/60">Tipo de Evento</label>
                   <select 
                     id="eventType" 
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-red transition-colors appearance-none"
+                    value={formData.eventType}
+                    onChange={handleChange}
+                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-red transition-colors appearance-none text-white"
                   >
-                    <option value="corporativo">Corporativo</option>
-                    <option value="casamento">Casamento</option>
-                    <option value="aniversario">Aniversário</option>
-                    <option value="outro">Outro</option>
+                    <option value="corporativo" className="bg-brand-black text-white">Festa de 15 Anos</option>
+                    <option value="casamento" className="bg-brand-black text-white">Casamento</option>
+                    <option value="aniversario" className="bg-brand-black text-white">Aniversário</option>
+                    <option value="outro" className="bg-brand-black text-white">Outro</option>
                   </select>
                 </div>
                 <div className="space-y-2">
@@ -117,13 +158,15 @@ export default function Contact() {
                   <textarea 
                     id="message" 
                     rows={4} 
+                    value={formData.message}
+                    onChange={handleChange}
                     className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-red transition-colors resize-none"
                     placeholder="Conte-nos sobre seu evento..."
                   ></textarea>
                 </div>
                 <button type="submit" className="btn-primary w-full justify-center py-4 text-lg">
                   <Send size={20} />
-                  Enviar Pedido de Orçamento
+                  Enviar Pedido via WhatsApp
                 </button>
               </form>
             </motion.div>

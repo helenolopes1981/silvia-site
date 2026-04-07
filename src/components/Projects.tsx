@@ -6,28 +6,28 @@ const projects = [
     id: 'silvia-cia',
     title: 'Sílvia & Companhia',
     description: 'Um show sofisticado e versátil para eventos corporativos e casamentos, com repertório personalizado.',
-    image: 'https://picsum.photos/seed/silvia-cia/800/600',
+    image: 'https://ialets.com/wp-content/uploads/2025/12/42A8248.jpg',
     category: 'Corporativo & Social'
   },
   {
     id: 'forrogode',
     title: 'ForróGODE',
     description: 'A fusão perfeita entre o ritmo do Nordeste e o balanço do pagode. Energia pura para festas.',
-    image: 'https://picsum.photos/seed/forrogode/800/1000',
+    image: 'https://ialets.com/wp-content/uploads/2025/12/01png-scaled.png',
     category: 'Festa & Show'
   },
   {
     id: 'pagonejo',
     title: 'PagoNEJO',
     description: 'Os maiores sucessos do sertanejo com a batida contagiante do pagode. O queridinho dos eventos.',
-    image: 'https://picsum.photos/seed/pagonejo/800/600',
+    image: 'https://ialets.com/wp-content/uploads/2026/04/chapeu.png',
     category: 'Popular'
   },
   {
     id: 'rocknejo',
     title: 'RockNEJO',
     description: 'Uma proposta inovadora que une a atitude do rock com o sentimento do sertanejo universitário.',
-    image: 'https://picsum.photos/seed/rocknejo/800/800',
+    image: 'https://ialets.com/wp-content/uploads/2025/12/42A9523.jpg',
     category: 'Inovação'
   }
 ];
@@ -82,9 +82,14 @@ export default function Projects() {
                 <p className="text-sm text-white/60 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {project.description}
                 </p>
-                <button className="flex items-center gap-2 text-sm font-bold text-white hover:text-brand-red transition-colors">
+                <a 
+                  href={`https://wa.me/5531982284101?text=Olá, gostaria de saber mais sobre o projeto ${project.title}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm font-bold text-white hover:text-brand-red transition-colors"
+                >
                   Ver Detalhes <ExternalLink size={14} />
-                </button>
+                </a>
               </div>
             </motion.article>
           ))}

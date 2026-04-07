@@ -4,31 +4,31 @@ import { Award, Star, Users } from 'lucide-react';
 const recognitions = [
   {
     icon: <Award className="text-brand-red" size={32} />,
-    title: 'Melhor Performance Regional',
-    description: 'Premiada como a banda de maior destaque em eventos corporativos de 2023 pela Associação Comercial.'
+    title: '🎤 Experiência que Encanta',
+    description: 'Performance vocal profissional, pensada para emocionar e criar conexões reais com o público.'
   },
   {
     icon: <Users className="text-brand-red" size={32} />,
-    title: 'Satisfação Garantida',
-    description: 'Mais de 500 eventos realizados com 100% de feedback positivo de empreendedores e marcas.'
+    title: '💬 Eventos Personalizados',
+    description: 'Cada evento é único, o repertório é adaptado ao seu estilo e ocasião.'
   },
   {
     icon: <Star className="text-brand-red" size={32} />,
-    title: 'Referência em Versatilidade',
-    description: 'Reconhecida pela crítica musical pela transição impecável entre gêneros musicais distintos.'
+    title: '✨ Versatilidade Musical',
+    description: 'Do clássico ao contemporâneo, criando a atmosfera perfeita para cada momento.'
   }
 ];
 
 const testimonials = [
   {
-    name: 'Ricardo Santos',
-    role: 'CEO da TechFlow',
-    content: 'A Sílvia Banda Enigma transformou nosso lançamento de produto. A energia e o profissionalismo foram fundamentais para o sucesso do evento.'
+    name: 'Renata e William',
+    role: 'Casamento',
+    content: 'Silvia foi simplesmente perfeita no nosso casamento. Que voz incrível! Ela não deixou ninguém parado, todos os convidados se divertiram muito. Tornou a nossa festa ainda mais especial. Foi exatamente como sonhamos.'
   },
   {
-    name: 'Mariana Lima',
-    role: 'Fundadora da Bloom Eventos',
-    content: 'Contratar a Sílvia é garantia de tranquilidade. Ela entende o público e adapta o repertório de forma magistral.'
+    name: 'Mariana e Rafael',
+    role: 'Casamento',
+    content: 'Não se trata apenas de cantar, mas de sentir. A Silvia possui uma presença de palco encantadora e uma voz extraordinária. Após a festa, todos os convidados fizeram questão de elogiar.'
   }
 ];
 
@@ -38,7 +38,7 @@ export default function Awards() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
-            Reconhecimento de Uma <span className="text-brand-red">Trajetória Brilhante</span>
+            Transformando Eventos <span className="text-brand-red">em Memórias Inesquecíveis</span>
           </h2>
         </div>
 
