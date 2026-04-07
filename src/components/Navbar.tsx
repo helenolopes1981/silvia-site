@@ -21,7 +21,7 @@ export default function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           className="text-xl md:text-2xl font-display font-extrabold tracking-tighter text-white"
         >
-          SÍLVIA <span className="text-brand-red">BANDA ENIGMA</span>
+          SÍLVIA <span className="text-brand-red">& COMPANHIA</span>
         </motion.div>
 
         {/* Desktop Menu */}

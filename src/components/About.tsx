@@ -15,7 +15,7 @@ export default function About() {
             <div className="aspect-[4/5] rounded-3xl overflow-hidden glass p-2">
               <img 
                 src="https://ialets.com/wp-content/uploads/2025/12/42A3717.webp" 
-                alt="Sílvia Banda Enigma Portrait" 
+                alt="Sílvia & Companhia Portrait" 
                 className="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
                 loading="lazy"
@@ -36,7 +36,7 @@ export default function About() {
           >
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight">
               A História por Trás da Música: <br />
-              <span className="text-brand-red">Sílvia Banda Enigma</span>
+              <span className="text-brand-red">Sílvia & Companhia</span>
             </h2>
             
             <article className="space-y-6 text-white/70 text-lg leading-relaxed">
@@ -44,7 +44,10 @@ export default function About() {
                 Filha do renomado músico Joaquim do Mato Véio, Sílvia respira música desde o berço. Sua jornada começou aos 6 anos, e aos 18 já dominava o contra-baixo, realizando seu primeiro show profissional aos 18.
               </p>
               <p>
-                Ao lado de seus irmãos Edmar e Edson, fundou a <span className="text-white font-semibold">Banda Enigma</span>, um projeto que se tornou referência em versatilidade e qualidade técnica em toda a região.
+                Ao lado de seus irmãos Edmar e Edson, fundou a <span className="text-white font-semibold">Banda Enigma</span>, um projeto que se tornou referência em versatilidade e qualidade técnica em toda a região. Por anos, sua voz foi a identidade da banda, o que a tornou carinhosamente conhecida como "Sílvia da Banda Enigma".
+              </p>
+              <p>
+                Hoje, seguindo sua trajetória de sucesso, ela apresenta seu trabalho como <span className="text-white font-semibold">Sílvia & Companhia</span>, mantendo a mesma excelência e paixão que a acompanham desde o início.
               </p>
               <blockquote className="border-l-4 border-brand-red pl-6 py-2 italic text-white text-xl font-medium">
                 "Não saberia fazer outra coisa além de cantar. A música não é apenas minha profissão, é minha essência."

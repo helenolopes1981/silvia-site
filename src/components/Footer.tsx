@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
             <h2 className="text-2xl font-display font-extrabold tracking-tighter mb-6">
-              SÍLVIA <span className="text-brand-red">BANDA ENIGMA</span>
+              SÍLVIA <span className="text-brand-red">& COMPANHIA</span>
             </h2>
             <p className="text-white/50 max-w-sm leading-relaxed">
               Performance vocal profissional, pensada para emocionar e criar conexões reais com o público.
@@ -58,7 +58,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-sm">
-            Copyright © {currentYear} Sílvia Banda Enigma. Todos os direitos reservados.
+            Copyright © {currentYear} Sílvia & Companhia. Todos os direitos reservados.
           </p>
           <div className="flex gap-6 text-xs text-white/30">
             <a href="#" className="hover:text-white">Privacidade</a>

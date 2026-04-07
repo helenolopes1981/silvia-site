@@ -21,7 +21,7 @@ export default function Hero() {
             Música de Alta Performance
           </span>
           <h1 className="text-5xl md:text-8xl font-display font-extrabold mb-6 tracking-tight leading-tight">
-            Sílvia Banda Enigma: <br />
+            Sílvia & Companhia: <br />
             <span className="text-brand-red">O Show Perfeito </span> para Seu Evento.
           </h1>
           <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
