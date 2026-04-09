@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://silviabandaenigma.com.br/sitemap.xml
+
+# End of standard directives
